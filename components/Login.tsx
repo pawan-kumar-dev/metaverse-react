@@ -17,7 +17,7 @@ const Login = () => {
           objectFit="cover"
         />
         <button
-          onClick={authenticate}
+          onClick={() => authenticate()}
           className="hover: animate-pulse rounded-lg bg-yellow-500 p-5 font-bold"
         >
           Login to MetaVerse

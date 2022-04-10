@@ -1,8 +1,8 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
 import { MoralisProvider } from 'react-moralis'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
+  console.log('process============', process.env.NEXT_PUBLIC_APP_ID)
   return (
     <MoralisProvider
       serverUrl={process.env.NEXT_PUBLIC_SERVER_URL}
